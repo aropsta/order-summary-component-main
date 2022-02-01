@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -9,20 +9,21 @@
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
 
+  --bright-blue2: hsl(245, 65%, 60%);
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
   --dark-blue: hsl(223, 47%, 23%);
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h1 {
-  font-family: "Red Hat Display";
   min-height: fit-content;
   font-size: 2rem;
   margin: 2.5rem 0 1.2rem 0;
+  font-weight: 900;
   width: auto;
 }
 h2 {
-  font-family: "Red Hat Display";
   font-weight: 600;
   color: var(--desaturated-blue);
 }
@@ -60,20 +61,24 @@ body {
   align-items: center;
 }
 
-#change {
+.change-link {
   color: var(--bright-blue);
-  font-size: small;
-  font-weight: bold;
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 
+.change-link:hover {
+  text-decoration: none;
+  color: var(--bright-blue2);
+}
 .change {
   display: flex;
   background-color: var(--very-pale-blue);
   align-items: center;
   justify-content: space-around;
-  width: 75%;
+  width: 80%;
   flex-direction: row;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 12px;
   margin-top: 1.3rem;
   margin-bottom: 2rem;
@@ -99,50 +104,61 @@ p {
 }
 
 #annual {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 1.05rem;
 }
 
 #price {
   color: var(--desaturated-blue);
-  font-weight: lighter;
+  margin-top: 0.3rem;
+  font-size: 1rem;
 }
 #no {
   background-color: transparent;
   color: var(--desaturated-blue);
-  min-height: fit-content;
-  font-weight: bold;
-  font-size: small;
+}
+
+#no:hover {
+  color: black;
+  font-weight: 900;
 }
 
 #yes {
   background-color: var(--bright-blue);
-  font-size: small;
-  font-weight: bold;
   color: #fff;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 0.75rem;
+
   box-shadow: 0 16px 25px hsl(245, 75%, 82%);
 }
 
-#p {
+#yes:hover {
+  background-color: var(--bright-blue2);
+}
+
+.text {
   color: var(--desaturated-blue);
-  font-size: 16px;
+  font-size: 1.05rem;
   width: 362px;
 }
 
 #change {
   padding: 0;
+  font-size: 1.05rem;
   width: auto;
 }
-a {
-  min-height: fit-content;
-  padding: 0.75rem 2rem;
-  font-family: "Red Hat Display";
+button {
+  padding: 1rem 2rem;
   width: 75%;
+  font-weight: 700;
   text-align: center;
+  border: none;
+  background-color: transparent;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 0.9rem;
 }
 
-a:hover {
+button:hover {
   cursor: pointer;
 }
 
